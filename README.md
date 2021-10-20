@@ -7,6 +7,8 @@ slope is a simple webserver library written in Node.js. It allows the user high-
 
 ## Install
 
+Install and update using [npm](https://npmjs.org):
+
 ```sh
 npm i -g slope  # install slope
 slope -h        # make sure it works
@@ -19,4 +21,4 @@ slope -h        # make sure it works
 3. Use `slope run` to run the new Slope app.
 4. Visit localhost:8000!
 
-[Read the rest of the documentation online to continue.](slope.js.org/docs/)
+[Read the rest of the documentation online to continue.](https://slope.js.org/doc/)
