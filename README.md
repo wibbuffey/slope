@@ -21,4 +21,4 @@ slope -h        # make sure it works
 3. Use `slope run` to run the new Slope app.
 4. Visit localhost:8000!
 
-[Read the rest of the documentation online to continue.](https://slope.js.org/doc/)
+[Read the rest of the documentation here to continue.](/doc/)
