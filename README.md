@@ -16,7 +16,5 @@ slope -h        # make sure it works
 
 ## Links
 
-- Website: https://slope.js.org
-- Documentation: https://slope.js.org/doc/
 - Source Code: https://github.com/wibbuffey/slope
 - Issue Tracker: https://github.com/wibbuffey/slope/issues
