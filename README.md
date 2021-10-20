@@ -14,11 +14,9 @@ npm i -g slope  # install slope
 slope -h        # make sure it works
 ```
 
-## Getting Started
+## Links
 
-1. [Install slope.](#install)
-2. Use `slope new` to create a new Slope app.
-3. Use `slope run` to run the new Slope app.
-4. Visit localhost:8000!
-
-[Read the rest of the documentation here to continue.](/doc/)
+- Website: https://slope.js.org
+- Documentation: https://slope.js.org/doc/
+- Source Code: https://github.com/wibbuffey/slope
+- Issue Tracker: https://github.com/wibbuffey/slope/issues
