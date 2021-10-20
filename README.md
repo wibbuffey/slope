@@ -8,8 +8,8 @@ slope is a simple webserver library written in Node.js. It allows the user high-
 ## Install
 
 ```sh
-npm i -g slope	# install slope
-slope -h				# make sure it works
+npm i -g slope  # install slope
+slope -h        # make sure it works
 ```
 
 ## Getting Started
