@@ -29,6 +29,15 @@ npm i -g slope  # install slope
 slope -h        # make sure it works
 ```
 
+Alternatively, for the latest and most unstable version, clone with GitHub:
+
+```sh
+gh repo clone wibbuffey/slope # download slope
+cd slope                      # enter the directory
+```
+
+(Please note that you will have to add the binary to the path *yourself!*)
+
 ## Links
 
 - Source Code: https://github.com/wibbuffey/slope
