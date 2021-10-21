@@ -1,0 +1,25 @@
+{
+  "name": "slope",
+  "version": "1.0.0",
+  "description": "a node.js webserver library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wibbuffey/slope.git"
+  },
+  "keywords": [
+    "nodejs",
+    "javascript",
+    "webserver",
+    "library"
+  ],
+  "author": "wibbuffey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wibbuffey/slope/issues"
+  },
+  "homepage": "https://github.com/wibbuffey/slope#readme"
+}
