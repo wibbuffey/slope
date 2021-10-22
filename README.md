@@ -8,7 +8,7 @@ slope is an object-oriented class-driven webserver library written in Node.js. I
 In short, it allows you to create a webserver like this:
 
 ```javascript
-const Slope  = require("slope");
+const Slope  = require("slope.js");
 const server = new Slope.Server();
 
 server.routes.add("/", (client, result) => {
