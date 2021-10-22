@@ -1,4 +1,5 @@
 name: Create Slope.js release
+on: [workflow_dispatch]
 
 jobs:
   release:
