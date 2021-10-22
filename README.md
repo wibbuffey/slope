@@ -25,7 +25,7 @@ server.run();
 Install and update using [npm](https://npmjs.org):
 
 ```sh
-npm i -g slope.js
+npm i slope.js
 ```
 
 Alternatively, for the latest and most unstable version, clone with GitHub:
