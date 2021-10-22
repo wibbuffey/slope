@@ -10,12 +10,20 @@ const RaiseErrors = require("../utils/RaiseErrors");
 // module
 const http = require("http");
 
+/**
+ * @class Server
+ * @classdesc The object used to create a web server.
+ */
 module.exports = class Server {
   constructor(config = new Config()) {
     this.routes = new Routes();
     this.config = config;
   }
 
+  /**
+   * @function Server.run
+   * @description Run the web server.
+   */
   run() {
     http
       .createServer((request, response) => {
