@@ -1,5 +1,6 @@
 /**
- * @class Object used internally as a list of routes.
+ * @class Routes
+ * @classdesc Object used internally as a list of routes.
  */
 module.exports = class Routes {
   constructor() {
