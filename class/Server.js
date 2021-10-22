@@ -31,7 +31,11 @@ module.exports = class Server {
           if (request.url in this.routes.list) {
               this.routes.list[request.url](new Client(request), new Result(response));
           } else {
-            if (this.routes.list["*"]) {
+            let matched = this.routes.list.find((value) => { new RegExp(value).match(request.url) });
+            
+            if (matched) {
+              this.routes.list[matched](new Client(request), new Result(response));
+            } else if (this.routes.list["*"]) {
               this.routes.list["*"](new Client(request), new Result(response));
             } else {
               RaiseErrors(404, this.config, request, response);
