@@ -40,3 +40,9 @@ cd slope                      # enter the directory
 - Source Code: https://github.com/wibbuffey/slope
 - Issue Tracker: https://github.com/wibbuffey/slope/issues
 - Documentation: https://github.com/wibbuffey/slope/wiki
+- Discussions: https://github.com/wibbuffey/slope/discussions
+
+- Security Policy: [SECURITY.md](SECURITY.md)
+- Contributing Guide: [CONTRIBUTING.md](CONTRIBUTING.md)
+- Code of Conduct: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
+- License (MIT): [LICENSE.md](LICENSE.md)
