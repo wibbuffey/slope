@@ -30,14 +30,9 @@ module.exports = class Server {
         try {
           let found = false;
 
-          Object.keys(this.routes.list).forEach((item) => {
-            if (item == request.url) {
-              this.routes.list[item](new Client(request), new Result(response));
-              found = true;
-            }
-          });
-
-          if (!found) {
+          if (request.url in this.routes.list) {
+              this.routes.list[request.url](new Client(request), new Result(response));
+          } else {
             if (this.routes.list["*"]) {
               this.routes.list["*"](new Client(request), new Result(response));
             } else {
