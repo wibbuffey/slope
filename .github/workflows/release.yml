@@ -7,6 +7,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Extract branch name
+        shell: bash
+        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+        id: extract_branch
       - name: Generate changelog
         id: changelog
         uses: metcalfc/changelog-generator@v1.0.1
@@ -18,8 +22,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
+          tag_name: ${{ steps.extract_branch.outputs.branch }}
+          release_name: Release ${{ steps.extract_branch.outputs.branch }}
           body: ${{ steps.changelog.outputs.changelog }}
           draft: false
           prerelease: false
