@@ -1,3 +1,5 @@
+const http = require("http");
+
 /**
  * @class Client
  * @classdesc Used as a parameter for function calls.
