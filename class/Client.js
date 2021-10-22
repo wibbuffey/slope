@@ -1,3 +1,7 @@
+/**
+ * @class Client
+ * @classdesc Used as a parameter for function calls.
+ */
 module.exports = class Client {
   constructor(request) {
     this.request = request;
