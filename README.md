@@ -3,7 +3,7 @@
 
 ## Introduction
 
-slope is an object-oriented class-driven webserver library written in Node.js. It allows the user high-level access to numerous functions that allow the user to render templates, send files, return JSON data, and much more.
+slope is an object-oriented zero-dependency class-driven webserver library written in Node.js. It allows the user high-level access to numerous functions that allow the user to render templates, send files, return JSON data, and much more.
 
 In short, it allows you to create a webserver like this:
 
