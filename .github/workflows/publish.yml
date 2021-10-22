@@ -8,7 +8,6 @@ jobs:
   publish-npm:
     runs-on: ubuntu-latest
     steps:
-      
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
@@ -19,6 +18,7 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
   publish-gpr:
+    needs: publish-npm
     runs-on: ubuntu-latest
     permissions:
       contents: read
