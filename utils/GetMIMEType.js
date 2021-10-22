@@ -1,3 +1,9 @@
+/**
+ * @function getMIMEType
+ * @description Attempts to guess the MIME Content-Type of a file based on its extension.
+ * @param {String} filename - The filename.
+ * @returns {String} (Guessed) MIME Content-Type
+ */
 module.exports = (filename) => {
   return (
     {

@@ -7,6 +7,14 @@ const { name, version } = require("./VersionInfo")();
 const versionString =
   version.major.toString() + version.minor.toString + version.patch.toString();
 
+/**
+ * @function raiseErrors
+ * @description Used internally to raise HTTP errors.
+ * @param {Number} error
+ * @param {Config} config
+ * @param {http.IncomingMessage} request
+ * @param {http.ServerResponse} response
+ */
 module.exports = (error, config, request, response) => {
   if (config.errors[error]) {
     try {

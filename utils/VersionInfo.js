@@ -1,3 +1,8 @@
+/**
+ * @function versionInfo
+ * @description Used internally to get slope version info.
+ * @returns {Object} Version information
+ */
 module.exports = () => {
   return {
     name: "Slope",
