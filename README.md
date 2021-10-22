@@ -39,3 +39,4 @@ cd slope                      # enter the directory
 
 - Source Code: https://github.com/wibbuffey/slope
 - Issue Tracker: https://github.com/wibbuffey/slope/issues
+- Documentation: https://github.com/wibbuffey/slope/wiki
