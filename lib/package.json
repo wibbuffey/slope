@@ -1,10 +1,10 @@
 {
-  "name": "slope",
+  "name": "slope.js",
   "version": "1.0.0",
   "description": "a node.js webserver library",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"You can only test slope.js CLI, not the library!\" && exit 1"
   },
   "repository": {
     "type": "git",
