@@ -1,3 +1,7 @@
+/**
+ * @class Header
+ * @classdesc Class used internally as a list of headers.
+ */
 module.exports = class Header {
   constructor(response) {
     this.response = response;
