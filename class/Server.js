@@ -28,8 +28,6 @@ module.exports = class Server {
     http
       .createServer((request, response) => {
         try {
-          let found = false;
-
           if (request.url in this.routes.list) {
               this.routes.list[request.url](new Client(request), new Result(response));
           } else {
