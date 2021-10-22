@@ -1,0 +1,21 @@
+name: Begin new update
+on: 
+  workflow_dispatch:
+    inputs:
+      name:
+        description: "Version name"
+        required: true
+        default: "vA.B.C"
+
+jobs:
+  update:
+  - name: Create branch
+    uses: peterjgrainger/action-create-branch@v2.0.1
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    with:
+      branch: ${{ github.event.inputs.name }}
+  - name: Checkout
+    uses: actions/checkout@v2
+  - name: Set default branch
+    # not yet finished...
