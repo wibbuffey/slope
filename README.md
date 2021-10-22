@@ -26,7 +26,6 @@ Install and update using [npm](https://npmjs.org):
 
 ```sh
 npm i -g slope  # install slope
-slope -h        # make sure it works
 ```
 
 Alternatively, for the latest and most unstable version, clone with GitHub:
