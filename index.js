@@ -1,3 +1,6 @@
+/**
+ * @file Exports all functions and classes from slope.
+ */
 module.exports = {
   // Classes
   Client: require("./class/client"),
