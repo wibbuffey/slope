@@ -11,7 +11,7 @@ module.exports = class Header {
    * @function Header.get
    * @description Retrieves a header from the object.
    * @param {String} header - The header's name.
-   * @returns
+   * @returns {String} The value of the header.
    */
   get(header) {
     return this.response.getHeader(header);
@@ -22,19 +22,17 @@ module.exports = class Header {
    * @description Adds or replaces a header in the object.
    * @param {String} header - The header's name.
    * @param {String} value - The value the header will be set to.
-   * @returns
    */
   set(header, value) {
-    return this.response.setHeader(header, value);
+    this.response.setHeader(header, value);
   }
 
   /**
    * @function Header.remove
    * @description Removes a header from the object.
    * @param {String} header - The header's name.
-   * @returns
    */
   remove(header) {
-    return this.response.removeHeader(header);
+    this.response.removeHeader(header);
   }
 };
