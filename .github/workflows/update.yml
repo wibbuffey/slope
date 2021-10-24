@@ -74,4 +74,4 @@ jobs:
 
           git add .
           git commit -m "update pages"
-          git push
+          git push origin HEAD
