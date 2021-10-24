@@ -34,8 +34,8 @@ module.exports = class Server {
               new Result(response)
             );
           } else {
-            let matched = this.routes.list.find((value) => {
-              new RegExp(value).match(request.url);
+            let matched = Object.keys(this.routes.list).find((value) => {
+              request.url.match(new RegExp(value));
             });
 
             if (matched) {
