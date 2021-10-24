@@ -36,8 +36,8 @@ jobs:
       - name: Build JSDoc functions
         uses: andstor/jsdoc-action@v1.2.0
         with:
-          source_dir: ./class-OLD
-          output_dir: ./class
+          source_dir: ./utils-OLD
+          output_dir: ./utils
       - name: Push to GitHub actions
         run: |
           git rm -f utils-OLD/*
