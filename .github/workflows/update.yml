@@ -40,8 +40,8 @@ jobs:
           output_dir: ./class
       - name: Push to GitHub actions
         run: |
-          git rm utils-OLD
-          git rm class-OLD
+          git rm utils-OLD/*
+          git rm class-OLD/*
 
           cd utils
           echo "# slope: Functions\n" >> index.md
