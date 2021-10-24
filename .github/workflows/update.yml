@@ -1,5 +1,8 @@
 name: Update GitHub Pages
-on: [push]
+on:
+  push:
+    branches:
+      - library
 
 jobs:
   update:
@@ -39,35 +42,35 @@ jobs:
           output_dir: ./class
       - name: Push to GitHub actions
       - run: |
-        git rm utils-OLD
-        git rm class-OLD
+          git rm utils-OLD
+          git rm class-OLD
 
-        cd utils
-        echo "# slope: Functions\n" >> index.md
+          cd utils
+          echo "# slope: Functions\n" >> index.md
 
-        for i in *
-        do
-          f="${filename%.*}"
+          for i in *
+          do
+            f="${filename%.*}"
 
-          if [ ! "$i" == "index.md" ]
-          then
-            echo "- [$f](./$i)"
-        done
+            if [ ! "$i" == "index.md" ]
+            then
+              echo "- [$f](./$i)"
+          done
 
-        cd ../class
-        echo "# slope: Classes\n" >> index.md
+          cd ../class
+          echo "# slope: Classes\n" >> index.md
 
-        for i in *
-        do
-          f="${filename%.*}"
+          for i in *
+          do
+            f="${filename%.*}"
 
-          if [ ! "$i" == "index.md" ]
-          then
-            echo "- [$f](./$i)"
-        done
+            if [ ! "$i" == "index.md" ]
+            then
+              echo "- [$f](./$i)"
+          done
 
-        cd ..
+          cd ..
 
-        git add .
-        git commit -m "update pages"
-        git push
+          git add .
+          git commit -m "update pages"
+          git push
