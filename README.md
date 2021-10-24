@@ -58,6 +58,7 @@ If you want to follow the project or ask for help:
 - Issue Tracker: https://github.com/wibbuffey/slope/issues
 - Documentation: https://github.com/wibbuffey/slope/wiki
 - Discussions: https://github.com/wibbuffey/slope/discussions
+- Website: https://wibbuffey.github.io/slope
 
 If you want to contribute:
 
