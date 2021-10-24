@@ -8,9 +8,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Setup
-        run: |
-          git pull
-          
+        run: |          
           git checkout library
           git branch -C library pages
           git checkout pages
