@@ -19,13 +19,15 @@ jobs:
           git mv class class-OLD
           git mv utils utils-OLD
 
-          git mv .github/CHANGELOG.md .
+          git mv .github/CONTRIBUTING.md .
           git mv .github/SECURITY.md .
           git mv .github/CODE_OF_CONDUCT.md .
 
           git rm .github/PULL_REQUEST_TEMPLATE.md
           git rm .github/workflows/*
           git rm .github/ISSUE_TEMPLATE/*
+          
+          echo "theme: jekyll-theme-minimal" > _config.yml
       - name: Build JSDoc classes
         uses: andstor/jsdoc-action@v1.2.0
         with:
