@@ -46,8 +46,7 @@ jobs:
           cd utils
           echo "# slope: Functions\n" >> index.md
 
-          for i in *
-          do
+          for i in *; do
             f="${filename%.*}"
 
             if [ ! "$i" == "index.md" ]
@@ -58,8 +57,7 @@ jobs:
           cd ../class
           echo "# slope: Classes\n" >> index.md
 
-          for i in *
-          do
+          for i in *; do
             f="${filename%.*}"
 
             if [ ! "$i" == "index.md" ]
