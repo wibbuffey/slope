@@ -18,7 +18,18 @@ server.routes.add("/", (client, result) => {
 server.run();
 ```
 
-(Try it -- this is completely working Slope code!)
+Try it -- this is completely working Slope code! If you want to dynamically load routes, you can do something like what was described in discussion [#8](https://github.com/wibbuffey/slope/discussions/8):
+
+```javascript
+const Slope = require("slope.js");
+const server = new Slope.Server();
+
+server.routes.add("*", (client, result) => {
+  try { require(`./routes/${client.url}`) } catch (error) { Slope.raiseErrors(404) }
+});
+
+server.run();
+```
 
 ## Install
 
