@@ -8,7 +8,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Setup
-        run: |          
+        run: |
+          git pull
+          
           git checkout library
           git branch -C library pages
           git checkout pages
@@ -75,5 +77,4 @@ jobs:
 
           git add .
           git commit -m "update pages"
-          git pull
-          git push origin HEAD
+          git push -f origin HEAD
