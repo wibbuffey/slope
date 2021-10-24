@@ -10,7 +10,7 @@ module.exports = class Routes {
   /**
    * @function Routes.add
    * @description Assigns a function to a URL.
-   * @param {String | RegExp} name - The URL to bind the function to.
+   * @param {String | RegExp} name - The URL/RegExp to bind the function to, or "*" as a fallback. 
    * @param {Function} callback - What to call when the page is visited.
    */
   add(name, callback) {
