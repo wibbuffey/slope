@@ -31,12 +31,12 @@ jobs:
           git rm .github/workflows/*
           git rm .github/ISSUE_TEMPLATE/*
       - name: Build JSDoc classes
-        uses: andstor/jsdoc-action@v1
+        uses: andstor/jsdoc-action@v1.2.0
         with:
           source_dir: ./class-OLD
           output_dir: ./class
       - name: Build JSDoc functions
-        uses: andstor/jsdoc-action@v1
+        uses: andstor/jsdoc-action@v1.2.0
         with:
           source_dir: ./class-OLD
           output_dir: ./class
