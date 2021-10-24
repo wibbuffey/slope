@@ -1,6 +1,6 @@
 {
   "name": "slope.js",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "a node.js webserver library",
   "main": "index.js",
   "scripts": {
