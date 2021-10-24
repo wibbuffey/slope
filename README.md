@@ -61,8 +61,7 @@ If you want to follow the project or ask for help:
 
 If you want to contribute:
 
-- Security Policy: [SECURITY.md](pages/SECURITY.md)
-- Contributing Guide: [CONTRIBUTING.md](pages/CONTRIBUTING.md)
-- Code of Conduct: [CODE_OF_CONDUCT.md](pages/CODE_OF_CONDUCT.md)
-- License (MIT): [LICENSE.md](pages/LICENSE.md)
-- Roadmap and Vision: [ROADMAP.md](pages/ROADMAP.md)
+- Security Policy: [SECURITY.md](.github/SECURITY.md)
+- Contributing Guide: [CONTRIBUTING.md](.github/CONTRIBUTING.md)
+- Code of Conduct: [CODE_OF_CONDUCT.md](.github/CODE_OF_CONDUCT.md)
+- License (MIT): [LICENSE.md](.github/LICENSE.md)
