@@ -1,4 +1,4 @@
-const http = require("http");
+const url = require("url");
 
 /**
  * @class Client
@@ -15,7 +15,7 @@ module.exports = class Client {
 
     this.url = request.url;
     this.method = request.method;
-    this.params = new http.URL(
+    this.params = new url.URL(
       request.url,
       `http://${request.headers.host}`
     ).searchParams;
