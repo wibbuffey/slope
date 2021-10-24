@@ -33,13 +33,15 @@ jobs:
       - name: Build JSDoc classes
         uses: andstor/jsdoc-action@v1.2.0
         with:
-          source_dir: ./class-OLD
-          output_dir: ./class
+          input: ./class-OLD
+          output: ./class
+          format: md
       - name: Build JSDoc functions
         uses: andstor/jsdoc-action@v1.2.0
         with:
-          source_dir: ./utils-OLD
-          output_dir: ./utils
+          input: ./utils-OLD
+          output: ./utils
+          format: md
       - name: Push to GitHub actions
         run: |
           git config --global user.name "Automatic Updates"
