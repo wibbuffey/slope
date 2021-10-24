@@ -31,13 +31,13 @@ jobs:
           
           echo "theme: jekyll-theme-minimal" > _config.yml
       - name: Build JSDoc classes
-        uses: codevise/documentation-js-action@v1
+        uses: codevise/documentation-js-action@v1.3.1
         with:
           input: ./class-OLD
           output: ./class
           format: md
       - name: Build JSDoc functions
-        uses: codevise/documentation-js-action@v1
+        uses: codevise/documentation-js-action@v1.3.1
         with:
           input: ./utils-OLD
           output: ./utils
