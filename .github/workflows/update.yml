@@ -52,7 +52,7 @@ jobs:
             if [ ! "$i" == "index.md" ]
             then
               echo "- [$f](./$i)" >> index.md
-            endif
+            fi
           done
 
           cd ../class
@@ -64,7 +64,7 @@ jobs:
             if [ ! "$i" == "index.md" ]
             then
               echo "- [$f](./$i)" >> index.md
-            endif
+            fi
           done
 
           cd ..
