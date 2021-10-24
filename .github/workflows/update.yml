@@ -1,8 +1,5 @@
 name: Update GitHub Pages
-on:
-  push:
-    branches:
-      - library
+on: push
 
 jobs:
   update:
@@ -41,7 +38,7 @@ jobs:
           source_dir: ./class-OLD
           output_dir: ./class
       - name: Push to GitHub actions
-      - run: |
+        run: |
           git rm utils-OLD
           git rm class-OLD
 
