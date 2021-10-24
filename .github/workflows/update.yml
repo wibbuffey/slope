@@ -10,7 +10,6 @@ jobs:
       - name: Setup
         run: |
           git checkout library
-          git branch -D pages
           git branch -C library pages
           git checkout pages
 
