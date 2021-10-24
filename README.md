@@ -3,16 +3,16 @@
 
 ## Introduction
 
-slope is an object-oriented zero-dependency class-driven webserver library written in Node.js. It allows the user high-level access to numerous functions that allow the user to render templates, send files, return JSON data, and much more.
+slope is an object-oriented zero-dependency class-driven webserver library written in Node.js. It allows the user high-level access to numerous functions that allow the user to render HTML documents, send files, return JSON data, and much more.
 
 In short, it allows you to create a webserver like this:
 
 ```javascript
-const Slope  = require("slope.js");
+const Slope = require("slope.js");
 const server = new Slope.Server();
 
 server.routes.add("/", (client, result) => {
-  result.send("Hello, world!")
+  result.send("Hello, world!");
 });
 
 server.run();
@@ -25,7 +25,11 @@ const Slope = require("slope.js");
 const server = new Slope.Server();
 
 server.routes.add("*", (client, result) => {
-  try { require(`./routes/${client.url}`) } catch (error) { Slope.raiseErrors(404) }
+  try {
+    require(`./routes/${client.url}`);
+  } catch (error) {
+    Slope.raiseErrors(404);
+  }
 });
 
 server.run();
@@ -57,7 +61,8 @@ If you want to follow the project or ask for help:
 
 If you want to contribute:
 
-- Security Policy: [SECURITY.md](SECURITY.md)
-- Contributing Guide: [CONTRIBUTING.md](CONTRIBUTING.md)
-- Code of Conduct: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
-- License (MIT): [LICENSE.md](LICENSE.md)
+- Security Policy: [SECURITY.md](pages/SECURITY.md)
+- Contributing Guide: [CONTRIBUTING.md](pages/CONTRIBUTING.md)
+- Code of Conduct: [CODE_OF_CONDUCT.md](pages/CODE_OF_CONDUCT.md)
+- License (MIT): [LICENSE.md](pages/LICENSE.md)
+- Roadmap and Vision: [ROADMAP.md](pages/ROADMAP.md)
