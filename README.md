@@ -26,7 +26,7 @@ const server = new Slope.Server();
 
 server.routes.add("*", (client, result) => {
   try {
-    require(`./routes/${client.url}`);
+    require(`./routes/${client.url}`)();
   } catch (error) {
     Slope.raiseErrors(404);
   }
