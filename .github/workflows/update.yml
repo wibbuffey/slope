@@ -1,0 +1,73 @@
+name: Update GitHub Pages
+on: [push]
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup
+        run: |
+          git checkout library
+          git branch -D pages
+          git branch -C library pages
+          git checkout pages
+
+          git mv README.md index.md
+          git rm index.js package.json
+
+          git mv class class-OLD
+          git mv utils utils-OLD
+
+          git mv .github/CHANGELOG.md .
+          git mv .github/SECURITY.md .
+          git mv .github/CODE_OF_CONDUCT.md .
+
+          git rm .github/PULL_REQUEST_TEMPLATE.md
+          git rm .github/workflows/*
+          git rm .github/ISSUE_TEMPLATE/*
+      - name: Build JSDoc classes
+        uses: andstor/jsdoc-action@v1
+        with:
+          source_dir: ./class-OLD
+          output_dir: ./class
+      - name: Build JSDoc functions
+        uses: andstor/jsdoc-action@v1
+        with:
+          source_dir: ./class-OLD
+          output_dir: ./class
+      - name: Push to GitHub actions
+      - run: |
+        git rm utils-OLD
+        git rm class-OLD
+
+        cd utils
+        echo "# slope: Functions\n" >> index.md
+
+        for i in *
+        do
+          f="${filename%.*}"
+
+          if [ ! "$i" == "index.md" ]
+          then
+            echo "- [$f](./$i)"
+        done
+
+        cd ../class
+        echo "# slope: Classes\n" >> index.md
+
+        for i in *
+        do
+          f="${filename%.*}"
+
+          if [ ! "$i" == "index.md" ]
+          then
+            echo "- [$f](./$i)"
+        done
+
+        cd ..
+
+        git add .
+        git commit -m "update pages"
+        git push
