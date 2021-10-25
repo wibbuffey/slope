@@ -30,7 +30,7 @@ jobs:
         with:
           source: ./utils/*
           output: ./utils.md
-      - name: Push to GitHub actions
+      - name: Push to GitHub Pages
         run: |
           git rm class/*
           git rm utils/*
@@ -48,6 +48,8 @@ jobs:
           
       - name: Push to GitHub Wiki
         run: |
+          git branch -D master
+          
           git remote add wiki https://github.com/wibbuffey/slope.wiki.git
           git pull wiki master
           git checkout master
