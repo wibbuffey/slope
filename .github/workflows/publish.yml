@@ -49,8 +49,8 @@ jobs:
       - name: Push to GitHub Wiki
         run: |
           git remote add wiki https://github.com/wibbuffey/slope.wiki.git
+          git pull wiki master
           git checkout master
-          git pull wiki master --allow-unrelated-histories
           
           git rm *
           git add index.md
