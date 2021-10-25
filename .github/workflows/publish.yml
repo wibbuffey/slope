@@ -52,6 +52,7 @@ jobs:
           
           git remote add wiki https://github.com/wibbuffey/slope.wiki.git
           git pull wiki master --allow-unrelated-histories
+          git fetch wiki --unshallow
           git checkout master
           
           git mv index.md Home.md
