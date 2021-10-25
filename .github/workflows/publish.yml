@@ -52,7 +52,7 @@ jobs:
           git mv class-NEW class
 
           cd utils
-          echo "# slope: Functions\n" >> index.md
+          echo "# slope: Functions\n" > index.md
 
           for i in *; do
             f="${filename%.*}"
@@ -64,7 +64,7 @@ jobs:
           done
 
           cd ../class
-          echo "# slope: Classes\n" >> index.md
+          echo "# slope: Classes\n" > index.md
 
           for i in *; do
             f="${filename%.*}"
