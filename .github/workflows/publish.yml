@@ -18,10 +18,7 @@ jobs:
           git mv README.md index.md
           git rm index.js package.json
 
-          git rm .github/*
-          git rm .github/workflows/*
-          git rm .github/ISSUE_TEMPLATE/*
-          
+          git rm -r .github/*          
           echo "theme: jekyll-theme-minimal" > _config.yml
       - name: Build JSDoc classes
         uses: wibbuffey/jsdoc2md@v1.1.7
