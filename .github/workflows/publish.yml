@@ -12,8 +12,8 @@ jobs:
           git pull
           
           git checkout library
-          git branch -C library pages
-          git checkout pages
+          git branch -C library website
+          git checkout website
 
           git mv README.md index.md
           git rm index.js package.json LICENSE.md
