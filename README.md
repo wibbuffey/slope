@@ -62,7 +62,7 @@ If you want to follow the project or ask for help:
 
 If you want to contribute:
 
-- Security Policy: [SECURITY.md](.github/SECURITY.md)
-- Contributing Guide: [CONTRIBUTING.md](.github/CONTRIBUTING.md)
-- Code of Conduct: [CODE_OF_CONDUCT.md](.github/CODE_OF_CONDUCT.md)
-- License (MIT): [LICENSE.md](LICENSE.md)
+- Security Policy: [SECURITY.md](https://github.com/wibbuffey/slope/blob/library/.github/SECURITY.md)
+- Contributing Guide: [CONTRIBUTING.md](https://github.com/wibbuffey/slope/blob/library/.github/CONTRIBUTING.md)
+- Code of Conduct: [CODE_OF_CONDUCT.md](https://github.com/wibbuffey/slope/blob/library/.github/CODE_OF_CONDUCT.md)
+- License (MIT): [LICENSE.md](https://github.com/wibbuffey/slope/blob/library/LICENSE.md)
