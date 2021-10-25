@@ -18,11 +18,7 @@ jobs:
           git mv README.md index.md
           git rm index.js package.json
 
-          git mv .github/CONTRIBUTING.md .
-          git mv .github/SECURITY.md .
-          git mv .github/CODE_OF_CONDUCT.md .
-
-          git rm .github/PULL_REQUEST_TEMPLATE.md
+          git rm .github/*
           git rm .github/workflows/*
           git rm .github/ISSUE_TEMPLATE/*
           
