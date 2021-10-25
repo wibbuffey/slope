@@ -28,12 +28,12 @@ jobs:
           
           echo "theme: jekyll-theme-minimal" > _config.yml
       - name: Build JSDoc classes
-        uses: wibbuffey/jsdoc2md@v1.1.3
+        uses: wibbuffey/jsdoc2md@v1.1.4
         with:
           source: ./class/*
           output: ./class.md
       - name: Build JSDoc functions
-        uses: wibbuffey/jsdoc2md@v1.1.3
+        uses: wibbuffey/jsdoc2md@v1.1.4
         with:
           source: ./utils/*
           output: ./utils.md
