@@ -14,12 +14,12 @@ jobs:
         id: changelog
         uses: metcalfc/changelog-generator@v2.0.0
         with:
-          myToken: ${{ github.token }}
+          myToken: ${{ secrets.GITHUB_TOKEN }}
       - name: Create Release
         id: create_release
         uses: actions/create-release@latest
         env:
-          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ${{ steps.package-version.outputs.current-version }}
           release_name: Release v${{ steps.package-version.outputs.current-version }}
@@ -54,4 +54,4 @@ jobs:
           registry-url: https://npm.pkg.github.com/
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{ github.token }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
