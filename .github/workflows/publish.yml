@@ -44,7 +44,7 @@ jobs:
           git rm .gitignore
           
           echo -e "\nTo begin reading the documentation:\n- [Classes](./class)\n- [Functions](./utils.md)" >> index.md
-          sed "s/.github/./" index.md > index.md
+          sed -i "s/.github/./" index.md > index.md
           
           git config --global user.name "Automatic Updates"
           git config --global user.email "actions@github.com"
