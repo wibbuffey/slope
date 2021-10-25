@@ -46,10 +46,15 @@ jobs:
           git commit -m "update pages"
           git push -f origin HEAD
           
+      - name: Push to GitHub Wiki
+        run: |
           git remote add wiki https://github.com/wibbuffey/slope.wiki.git
           git mv index.md Home.md
           git mv class.md Classes.md
           git mv utils.md Functions.md
           git rm _config.yml
           
+          git fetch --unshallow wiki
+          git add .
+          git commit -m "Update wiki"
           git push -f wiki pages:master
