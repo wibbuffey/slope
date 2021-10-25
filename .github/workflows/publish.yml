@@ -43,6 +43,8 @@ jobs:
           git rm utils/*
           git rm .gitignore
           
+          echo "\nTo begin reading the documentation:\n- [Classes](./class)\n- [Functions](./utils.md)" >> index.md
+          
           git config --global user.name "Automatic Updates"
           git config --global user.email "actions@github.com"
           git config pull.rebase false  
