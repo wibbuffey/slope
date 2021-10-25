@@ -49,7 +49,8 @@ jobs:
       - name: Push to GitHub Wiki
         run: |
           git remote add wiki https://github.com/wibbuffey/slope.wiki.git
-          git pull
+          git pull wiki master
+          git checkout master
           
           git mv index.md Home.md
           git mv class.md Classes.md
@@ -58,4 +59,4 @@ jobs:
           
           git add .
           git commit -m "Update wiki"
-          git push -f wiki pages:master
+          git push -f wiki master
