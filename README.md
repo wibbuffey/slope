@@ -56,9 +56,8 @@ If you want to follow the project or ask for help:
 
 - Source Code: [https://github.com/wibbuffey/slope](https://github.com/wibbuffey/slope)
 - Issue Tracker: [https://github.com/wibbuffey/slope/issues](https://github.com/wibbuffey/slope/issues)
-- Documentation: [https://github.com/wibbuffey/slope/wiki](https://github.com/wibbuffey/slope/wiki)
 - Discussions: [https://github.com/wibbuffey/slope/discussions](https://github.com/wibbuffey/slope/discussions)
-- Website: [https://wibbuffey.github.io/slope](https://wibbuffey.github.io/slope)
+- Documentation: [https://wibbuffey.github.io/slope](https://wibbuffey.github.io/slope)
 
 If you want to contribute:
 
