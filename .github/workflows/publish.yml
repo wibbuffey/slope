@@ -48,17 +48,18 @@ jobs:
           
       - name: Push to GitHub Wiki
         run: |
-          git branch -C pages master
-          
           git remote add wiki https://github.com/wibbuffey/slope.wiki.git
           git pull wiki master --allow-unrelated-histories
-          git fetch --unshallow wiki
           git checkout master
+          
+          git rm *
+          git add index.md
+          git add class.md
+          git add utils.md
           
           git mv index.md Home.md
           git mv class.md Classes.md
           git mv utils.md Functions.md
-          git rm _config.yml
           
           git add .
           git commit -m "Update wiki"
