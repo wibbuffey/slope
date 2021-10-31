@@ -10,13 +10,14 @@ jobs:
       - name: Setup
         run: |
           git pull
-          
+
           git checkout library
           git branch -C library website
           git checkout website
 
           git mv README.md index.md
           git rm index.js package.json LICENSE.md
+          git mv pages/*.md *.md
 
           git rm -r .github/*          
           echo "theme: jekyll-theme-minimal" > _config.yml
@@ -35,13 +36,13 @@ jobs:
           git rm class/*
           git rm utils/*
           git rm .gitignore
-          
-          echo -e "\nTo begin reading the documentation:\n- [Classes](./class)\n- [Functions](./utils.md)" >> index.md
-          
+
+          echo -e "\nTo begin reading the documentation:\n- [Classes](./class)\n- [Functions](./utils.md)\n- [Slope.js Guide](./guide.md)" >> index.md
+
           git config --global user.name "Automatic Updates"
           git config --global user.email "actions@github.com"
           git config pull.rebase false  
-          
+
           git add .
           git commit -m "update pages"
           git push -f origin HEAD
