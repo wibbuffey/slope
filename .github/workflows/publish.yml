@@ -17,7 +17,7 @@ jobs:
 
           git mv README.md index.md
           git rm index.js package.json LICENSE.md
-          git mv pages/*.md *.md
+          git mv pages/*.md .
 
           git rm -r .github/*          
           echo "theme: jekyll-theme-minimal" > _config.yml
