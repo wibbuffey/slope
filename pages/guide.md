@@ -127,5 +127,4 @@ const server = new Slope.Server(new Config({
 
 ## Going Forward
 
-There are so many topics that weren't covered here, like functions (such as `getMIMEType` and `raiseErrors`), so to continue, consider [reading the documentation](https://wibbuffey.github.io/slope)
-
+There are so many topics that weren't covered here, like functions (such as `getMIMEType` and `raiseErrors`), so to continue, consider [reading the documentation](https://wibbuffey.github.io/slope).
