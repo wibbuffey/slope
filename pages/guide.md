@@ -1,6 +1,6 @@
 # Slope.js Guide
 
-**WARNING:** This guide is still a work in progress. Please feel free to report errors on the [issue tracker](https://github.com/wibbuffey/slope/blob/library/pages/#links).
+**WARNING:** This guide is still a work in progress. Please feel free to report errors on the [issue tracker](https://wibbuffey.github.io/#links).
 
 ## Introduction
 
