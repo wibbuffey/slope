@@ -37,7 +37,7 @@ jobs:
           git rm utils/*
           git rm .gitignore
 
-          echo -e "\nTo begin reading the documentation:\n- [Classes](./class)\n- [Functions](./utils.md)\n- [Slope.js Guide](./guide.md)" >> index.md
+          echo -e "\nTo begin reading the documentation:\n- [Classes](./class)\n- [Functions](./utils)\n- [Slope.js Guide](./guide)" >> index.md
 
           git config --global user.name "Automatic Updates"
           git config --global user.email "actions@github.com"
