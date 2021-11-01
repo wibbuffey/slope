@@ -15,9 +15,9 @@ const http = require("http");
  * @classdesc The object used to create a web server.
  */
 module.exports = class Server {
-  constructor(config = new Config()) {
+  constructor(config = {}) {
     this.routes = new Routes();
-    this.config = config;
+    this.config = new Config(config);
   }
 
   /**
