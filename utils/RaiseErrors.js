@@ -30,6 +30,7 @@ module.exports = (error, config, request, response) => {
     client = new Client(request);
     result = new Result(response);
 
+    // 10.31.21: temporary error page, likely to be changed later on
     result.send(`<h1>Error: ${error}</h1>Running ${name} ${version}`);
   }
 };
