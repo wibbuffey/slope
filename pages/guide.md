@@ -43,7 +43,7 @@ const server = new Slope.Server();
 
 In slope, pages are created using "routes". A route is a connection between a URL and a function which displays the page. Routes can be specified as strings for direct URLs, with `"*"` to act as a fallback/wildcard when no page is found, or with a `RegEx` to have variables in the URL.
 
-> Tip: Slope also supports RegExes in the form of strings, such as `"/example/test."` instea//d of `/\/example\/test./`
+> Tip: Slope also supports RegExes in the form of strings, such as `"/example/test."` instead of `/\/example\/test./`
 
 Routes are specified with `Server.Routes`. It has two methods: `.add()` and `.remove()`.
 
