@@ -4,8 +4,6 @@ const Result = require("../class/Result");
 
 // utilities
 const { name, version } = require("../package");
-const versionString =
-  version.major.toString() + version.minor.toString + version.patch.toString();
 
 /**
  * @function raiseErrors
