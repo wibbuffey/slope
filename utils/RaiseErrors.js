@@ -3,7 +3,7 @@ const Client = require("../class/Client");
 const Result = require("../class/Result");
 
 // utilities
-const { name, version } = require("../package")();
+const { name, version } = require("../package");
 const versionString =
   version.major.toString() + version.minor.toString + version.patch.toString();
 
