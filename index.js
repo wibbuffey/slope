@@ -12,6 +12,5 @@ module.exports = {
 
   // Utilities
   raiseErrors: require("./utils/RaiseErrors"),
-  versionInfo: require("./utils/VersionInfo"),
   getMIMEType: require("./utils/GetMIMEType"),
 };
