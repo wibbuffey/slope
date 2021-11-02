@@ -6,7 +6,7 @@
 
 Welcome to slope.js! Slope.js (first letter lowercase unless at the start of a sentence) is an open-source library for Node.js that allows you to easily create web servers.
 
-It requires *no* advanced functions, *no* dependencies, and is generally easy-to-use while still maintaining its advanced features.
+It requires _no_ advanced functions, _no_ dependencies, and is generally easy-to-use while still maintaining its advanced features.
 
 ## Installing
 
@@ -50,12 +50,12 @@ Routes are specified with `Server.Routes`. It has two methods: `.add()` and `.re
 ```javascript
 server.routes.add("/test", (Client, Server) => {
   Server.send(`I'm viewing ${Client.url}!`);
-})
+});
 ```
 
 > Note: We'll explain the callback function **later**.
 
-Finally, we need to *run* the web server:
+Finally, we need to _run_ the web server:
 
 ```js
 server.run();
@@ -92,8 +92,6 @@ Suppose that you want to show a different page when your user gets a 404. Or per
 
 Both of these problems have one solution: `Config`! When creating a `Server`, there is one optional parameter containing a `Config` class.
 
-> Note: In the released version, 1.1.0, you need to pass `new Config({ ... })`. In the beta version (which you get if you clone from Git or GitHub CLI), you pass simply pass an `Object`, and `Server` will automatically pass that into the `Config` constructor.
-
 The `Config` constructor requires an `Object` with two properties.
 
 ### Port
@@ -102,9 +100,9 @@ This option is a `Number` that specifies the port at which the server will be ra
 
 ```javascript
 const Slope = require("slope.js");
-const server = new Slope.Server(new Config({
-  port: 5000
-}))
+const server = new Slope.Server({
+  port: 5000,
+});
 ```
 
 ### Errors
@@ -113,16 +111,20 @@ This option is an `Object` that specifies functions for slope to call when an er
 
 ```javascript
 const Slope = require("slope.js");
-const server = new Slope.Server(new Config({
+const server = new Slope.Server({
   errors: {
     // It's probably best if you specify both of these,
     // as 404 occurs when no page was found, and 500
     // occurs when slope or a callback function runs into
     // an error.
-    404: (Client, Server) => {/* ... */},
-    500: (Client, Server) => {/* ... */}
-  }
-}))
+    404: (Client, Server) => {
+      /* ... */
+    },
+    500: (Client, Server) => {
+      /* ... */
+    },
+  },
+});
 ```
 
 ## Going Forward
