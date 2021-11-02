@@ -34,7 +34,7 @@ module.exports = class Server {
               new Result(response)
             );
           } else {
-            routes = Object.keys(this.routes.list).filter((element) => {
+            let routes = Object.keys(this.routes.list).filter((element) => {
               /**
                * @wibbuffey, 11.02.21
                *
