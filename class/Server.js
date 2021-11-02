@@ -47,7 +47,13 @@ module.exports = class Server {
               return element instanceof RegExp && request.url.match(element);
             });
 
-            let route = routes.split(-1);
+            let route;
+
+            try {
+              route = routes.split(-1);
+            } catch {
+              route = undefined;
+            }
 
             if (route) {
               route();
