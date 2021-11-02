@@ -34,15 +34,23 @@ module.exports = class Server {
               new Result(response)
             );
           } else {
-            let matched = Object.keys(this.routes.list).find((value) => {
-              return request.url.slice(1).match(new RegExp(value.slice(1)));
+            routes = Object.keys(this.routes.list).filter((element) => {
+              /**
+               * @wibbuffey, 11.02.21
+               *
+               * The reason why we use && instead of an if statement is because
+               * if the first element evaluates to false, then the statement
+               * short-circuits and therefore we don't have to worry about
+               * request.url.match(element) returning an error as element will
+               * never be a string.
+               */
+              return element instanceof RegExp && request.url.match(element);
             });
 
-            if (matched) {
-              this.routes.list[matched](
-                new Client(request),
-                new Result(response)
-              );
+            let route = routes.split(-1);
+
+            if (route) {
+              route();
             } else if (this.routes.list["*"]) {
               this.routes.list["*"](new Client(request), new Result(response));
             } else {
