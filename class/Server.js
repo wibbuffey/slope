@@ -44,7 +44,7 @@ module.exports = class Server {
                * request.url.match(element) returning an error as element will
                * never be a string.
                */
-              return element instanceof RegExp && request.url.match(element);
+              return !!(element instanceof RegExp && request.url.match(element));
             });
 
             let route;
