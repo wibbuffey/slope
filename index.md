@@ -65,3 +65,8 @@ If you want to contribute:
 - Contributing Guide: [CONTRIBUTING.md](https://github.com/wibbuffey/slope/blob/library/.github/CONTRIBUTING.md)
 - Code of Conduct: [CODE_OF_CONDUCT.md](https://github.com/wibbuffey/slope/blob/library/.github/CODE_OF_CONDUCT.md)
 - License (MIT): [LICENSE.md](https://github.com/wibbuffey/slope/blob/library/LICENSE.md)
+
+To begin reading the documentation:
+- [Classes](./class)
+- [Functions](./utils)
+- [Slope.js Guide](./guide)
